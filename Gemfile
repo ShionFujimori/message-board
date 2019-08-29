@@ -56,3 +56,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Pagination
 gem 'kaminari'
+
+# debugger
+gem 'pry-byebug', group: :development
+
+# PostgreSQL
+group :production do
+  gem 'pg', '>= 0.18', '< 2.0'
+end
